@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Project Aster — Shadowing a Few Primary Care Practices</title>
+<meta name="description" content="A quick look at what shadowing your message-handling workflow involves, why I'm doing it, and how privacy is handled." />
+<style>
+  :root {
+    --bg: #faf9f7;
+    --surface: #ffffff;
+    --border: #e5e2dc;
+    --text: #23211d;
+    --text-muted: #5c584f;
+    --accent: #1f5f4a;
+    --accent-soft: #eaf2ee;
+    --max-width: 720px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #161513;
+      --surface: #1f1d1a;
+      --border: #33302a;
+      --text: #f1efe9;
+      --text-muted: #b3ada0;
+      --accent: #6fbf9c;
+      --accent-soft: #21322a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  main {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 4rem 1.5rem 6rem;
+  }
+  header.hero {
+    margin-bottom: 3rem;
+  }
+  .eyebrow {
+    display: inline-block;
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  h1 {
+    font-size: clamp(1.8rem, 4vw, 2.4rem);
+    line-height: 1.25;
+    margin: 0 0 1rem;
+  }
+  .lede {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    margin: 0;
+  }
+  section {
+    margin-top: 3rem;
+    padding-top: 3rem;
+    border-top: 1px solid var(--border);
+  }
+  h2 {
+    font-size: 1.3rem;
+    margin: 0 0 1rem;
+  }
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.2rem; }
+  li { margin-bottom: 0.5rem; }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.5rem;
+  }
+  .grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+  .badge {
+    display: inline-block;
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 0.2rem 0.6rem;
+    border-radius: 999px;
+    margin-bottom: 0.5rem;
+  }
+  footer.cta {
+    margin-top: 3rem;
+    padding: 2rem;
+    background: var(--accent-soft);
+    border-radius: 16px;
+    text-align: center;
+  }
+  footer.cta h2 { margin-bottom: 0.5rem; }
+  .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    background: var(--accent);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+  }
+  .btn:hover { opacity: 0.9; }
+  .fineprint {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-top: 3rem;
+  }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+
+  <header class="hero">
+    <span class="eyebrow">Project Aster · Pre-product research</span>
+    <h1>I'd like to watch how your practice handles patient messages — no pitch, no obligation.</h1>
+    <p class="lede">
+      I'm Abdul, a health-tech product person spending 7 years building
+      clinical software, most recently as Principal PM at Twin Health.
+      Before building anything new, I want to understand how independent
+      primary care practices actually triage the flood of patient messages —
+      by watching, not by guessing.
+    </p>
+  </header>
+
+  <section>
+    <h2>Why I'm doing this</h2>
+    <p>
+      I'm exploring an early concept — Project Aster — for an AI copilot
+      that helps independent practices (3–20 physicians) keep up with
+      incoming patient message volume: prioritizing what's urgent and
+      drafting protocol-based responses for a physician to review, edit, or
+      reject.
+    </p>
+    <p>
+      That's a hypothesis, not a finished product. Before I build anything,
+      I want to shadow about 10 practices to see the real workflow: what's
+      actually time-consuming, what's already working, and where a tool
+      like this would help or just get in the way. This page exists so
+      you have the details in writing before we talk.
+    </p>
+  </section>
+
+  <section>
+    <h2>What shadowing actually involves</h2>
+    <div class="grid">
+      <div class="card">
+        <span class="badge">In-person</span>
+        <p>If you're in the Atlanta metro area, I'll come to your office
+        and observe in person — one session, no repeat visits needed.</p>
+      </div>
+      <div class="card">
+        <span class="badge">Remote</span>
+        <p>If you're elsewhere, this works just as well as a screen-share
+        call, where you narrate as you triage your actual inbox.</p>
+      </div>
+    </div>
+    <ul style="margin-top:1.5rem">
+      <li><strong>Time:</strong> 30–60 minutes, scheduled around your day.</li>
+      <li><strong>What I'm looking for:</strong> how messages get triaged and
+        routed, what takes the most time, what's already handled well, and
+        where the friction actually is — in your own workflow, not a
+        hypothetical one.</li>
+      <li><strong>What I'm not doing:</strong> disrupting your workflow,
+        recording patient data, or pitching a product for you to buy.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>How I handle privacy and PHI</h2>
+    <p>
+      This is a genuine, upfront concern and I want to answer it before you
+      have to ask:
+    </p>
+    <ul>
+      <li>I observe workflow and process — how messages move, get
+        prioritized, and get answered — not the content of specific patient
+        records.</li>
+      <li>No PHI is recorded, photographed, or written down. If a message
+        happens to be visible on screen, it's incidental to observing the
+        process, never the point of the exercise.</li>
+      <li>Nothing from the session is shared outside this research — no
+        names, no practice-identifying details, in any notes or future
+        product materials, without your explicit sign-off.</li>
+      <li>There's no product yet, no data pipeline, no integration — this is
+        me in the room (or on a call) with a notebook, not software touching
+        your system.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>What's in it for you</h2>
+    <ul>
+      <li><strong>Early input:</strong> if this becomes a real product, the
+        practices I shadow now shape what gets built first — and get early
+        access ahead of anyone else.</li>
+      <li><strong>A modest honorarium</strong> for your time, regardless of
+        whether anything comes of the broader project.</li>
+      <li><strong>No commitment beyond the session</strong> — this is a
+        one-time observation, not the start of a sales relationship.</li>
+    </ul>
+  </section>
+
+  <footer class="cta">
+    <h2>Next step</h2>
+    <p>If a 30–60 minute session sounds reasonable, I'd love to find a time
+      that works for you.</p>
+    <a class="btn" href="mailto:abdulrahumanfazi@gmail.com?subject=Project%20Aster%20shadowing">
+      Reply to schedule a time
+    </a>
+  </footer>
+
+  <p class="fineprint">
+    Project Aster is an early-stage, pre-product research effort. This page
+    is informational only — there is no product to purchase or evaluate at
+    this stage.
+  </p>
+
+</main>
+</body>
+</html>

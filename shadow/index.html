@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A conversation about how dietitians work — Abdul (Sydney)</title>
+  <meta name="description" content="Abdul, in Sydney, is researching how Accredited Practising Dietitians actually work. A conversation of about 30–45 minutes, and optional later shadowing of 2–4 hours. No pitch. As a thank-you, a short summary of what is learned.">
+  <link rel="canonical" href="https://abdulrahuman.com/shadow/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://abdulrahuman.com/shadow/">
+  <meta property="og:title" content="A conversation about how dietitians work — Abdul (Sydney)">
+  <meta property="og:description" content="Abdul, in Sydney, is researching how Accredited Practising Dietitians actually work. A conversation of about 30–45 minutes, and optional later shadowing of 2–4 hours. No pitch. As a thank-you, a short summary of what is learned.">
+  <meta property="og:locale" content="en_AU">
+  <!-- CONFIRM: point at the existing headshot (absolute URL) before publishing. -->
+  <meta property="og:image" content="https://abdulrahuman.com/shadow/abdul.jpg">
+  <meta property="og:image:alt" content="Portrait of Abdul">
+  <meta name="twitter:card" content="summary">
+
+  <style>
+    :root {
+      --bg: #fbfaf7;
+      --surface: #ffffff;
+      --ink: #1f2a2e;
+      --muted: #55636a;
+      --line: #e3e0d8;
+      --accent: #2f6f62;
+      --accent-ink: #ffffff;
+      --accent-soft: #e6f0ec;
+      --focus: #b35c00;
+      --radius: 14px;
+      --max: 46rem;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg: #14191b; --surface: #1c2326; --ink: #e9eeef; --muted: #a8b4b8;
+        --line: #2e383c; --accent: #7cc4b2; --accent-ink: #0d1a17; --accent-soft: #1f302c; --focus: #ffb35c;
+      }
+    }
+    :root[data-theme="dark"] {
+      --bg: #14191b; --surface: #1c2326; --ink: #e9eeef; --muted: #a8b4b8;
+      --line: #2e383c; --accent: #7cc4b2; --accent-ink: #0d1a17; --accent-soft: #1f302c; --focus: #ffb35c;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0; background: var(--bg); color: var(--ink);
+      font: 1.0625rem/1.65 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+    img { max-width: 100%; height: auto; display: block; }
+    a { color: var(--accent); text-underline-offset: 0.18em; }
+    a:hover { text-decoration-thickness: 2px; }
+    :focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; border-radius: 4px; }
+
+    .skip-link {
+      position: absolute; left: 1rem; top: -4rem; z-index: 100;
+      background: var(--accent); color: var(--accent-ink); padding: .6rem 1rem; border-radius: 8px;
+      font-weight: 600; text-decoration: none;
+    }
+    .skip-link:focus { top: 1rem; }
+
+    .wrap { max-width: var(--max); margin: 0 auto; padding: 0 16px; }
+
+    /* Header & menu */
+    .site-header { border-bottom: 1px solid var(--line); background: var(--bg); position: sticky; top: 0; z-index: 10; }
+    .site-header .wrap { display: flex; align-items: center; justify-content: space-between; min-height: 3.5rem; gap: 1rem; }
+    .brand { font-weight: 700; color: var(--ink); text-decoration: none; }
+    .menu-toggle {
+      display: none; background: none; border: 1px solid var(--line); color: var(--ink);
+      border-radius: 8px; padding: .4rem .75rem; font: inherit; font-size: .95rem; cursor: pointer;
+    }
+    .site-nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 1.1rem; flex-wrap: wrap; }
+    .site-nav a { color: var(--muted); text-decoration: none; font-size: .95rem; }
+    .site-nav a:hover { color: var(--ink); text-decoration: underline; }
+    @media (max-width: 760px) {
+      .menu-toggle { display: inline-block; }
+      .site-nav { display: none; position: absolute; left: 0; right: 0; top: 100%; background: var(--bg); border-bottom: 1px solid var(--line); }
+      .site-nav.open { display: block; }
+      .site-nav ul { flex-direction: column; gap: 0; padding: .5rem 16px 1rem; }
+      .site-nav a { display: block; padding: .6rem 0; font-size: 1rem; }
+    }
+
+    /* Hero */
+    .hero { padding: 3rem 0 2.5rem; }
+    .hero-grid { display: grid; grid-template-columns: 1fr; gap: 1.75rem; align-items: start; }
+    @media (min-width: 640px) { .hero-grid { grid-template-columns: 8.5rem 1fr; } }
+    .headshot { width: 8.5rem; height: 8.5rem; border-radius: 50%; object-fit: cover; border: 3px solid var(--surface); box-shadow: 0 0 0 1px var(--line); background: var(--accent-soft); }
+    .kicker { margin: 0 0 .5rem; color: var(--accent); font-weight: 600; font-size: .9rem; letter-spacing: .04em; text-transform: uppercase; }
+    .greeting { margin: 0 0 .75rem; color: var(--muted); }
+    h1 { font-size: clamp(1.75rem, 5vw, 2.4rem); line-height: 1.2; margin: 0 0 1rem; letter-spacing: -0.01em; }
+    .lede { font-size: 1.125rem; margin: 0 0 1.5rem; }
+    .actions { display: flex; flex-wrap: wrap; gap: .75rem; }
+    .btn {
+      display: inline-block; padding: .8rem 1.2rem; border-radius: 10px; font-weight: 600;
+      text-decoration: none; border: 2px solid var(--accent); line-height: 1.3; text-align: center;
+    }
+    .btn-primary { background: var(--accent); color: var(--accent-ink); }
+    .btn-primary:hover { filter: brightness(1.08); }
+    .btn-secondary { background: transparent; color: var(--accent); }
+    .btn-secondary:hover { background: var(--accent-soft); }
+
+    /* Sections */
+    section { padding: 2.25rem 0; border-top: 1px solid var(--line); }
+    h2 { font-size: 1.45rem; line-height: 1.3; margin: 0 0 1rem; }
+    h3 { font-size: 1.1rem; margin: 0 0 .4rem; }
+    p { margin: 0 0 1rem; }
+    ul.list { margin: 0 0 1rem; padding-left: 1.25rem; }
+    ul.list li { margin-bottom: .35rem; }
+    .cards { display: grid; grid-template-columns: 1fr; gap: 1rem; margin-top: .5rem; }
+    @media (min-width: 640px) { .cards { grid-template-columns: 1fr 1fr; } }
+    .card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.2rem 1.25rem; }
+    .card p:last-child { margin-bottom: 0; }
+    .note { background: var(--accent-soft); border-radius: var(--radius); padding: 1rem 1.2rem; }
+    .note p:last-child { margin-bottom: 0; }
+
+    .cta { text-align: left; }
+    .cta .btn { margin-top: .25rem; }
+
+    /* FAQ */
+    .faq details { border: 1px solid var(--line); background: var(--surface); border-radius: 10px; margin-bottom: .6rem; }
+    .faq summary { cursor: pointer; padding: .9rem 1.1rem; font-weight: 600; list-style-position: outside; }
+    .faq summary:hover { color: var(--accent); }
+    .faq details > p { padding: 0 1.1rem 1rem; margin: 0; }
+
+    /* Footer */
+    .site-footer { border-top: 1px solid var(--line); padding: 2rem 0 3rem; color: var(--muted); font-size: .95rem; }
+    .site-footer ul { list-style: none; padding: 0; margin: 0 0 .75rem; display: flex; flex-wrap: wrap; gap: .4rem 1.1rem; }
+    .site-footer p { margin: 0; }
+
+    /* Reveal (progressive enhancement; content visible without JS) */
+    .js .reveal { opacity: 0; transform: translateY(12px); transition: opacity .5s ease, transform .5s ease; }
+    .js .reveal.is-visible { opacity: 1; transform: none; }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .js .reveal, .js .reveal.is-visible { opacity: 1; transform: none; transition: none; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="https://abdulrahuman.com/">Abdul (Sydney)</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="On this page">
+        <ul>
+          <li><a href="#what">What this is</a></li>
+          <li><a href="#who">Who I’m looking for</a></li>
+          <li><a href="#involved">What’s involved</a></li>
+          <li><a href="#privacy">Privacy</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#book">Book</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <div class="wrap">
+
+      <!-- Hero -->
+      <div class="hero">
+        <div class="hero-grid">
+          <!-- CONFIRM: replace src with the existing headshot path used on the current page. -->
+          <img class="headshot" src="abdul.jpg" width="272" height="272" alt="Portrait of Abdul, smiling, head and shoulders">
+          <div>
+            <p class="kicker">A conversation about how dietitians work</p>
+            <p class="greeting">Hi, I’m Abdul — I live in Sydney, and I’m researching how Accredited Practising Dietitians actually work, day to day.</p>
+            <h1>I’d like to learn how your work as a dietitian actually runs.</h1>
+            <p class="lede">This is a learning conversation, not a pitch and not the start of a sales relationship. I’m hoping to speak with APDs in Sydney and NSW for about 30–45 minutes. Where a workplace can approve it, a later observational shadowing session of 2–4 hours may also be possible. As a thank-you, I can share a short summary of what I learn across these conversations.</p>
+            <div class="actions">
+              <a class="btn btn-primary" href="https://cal.com/abdul-rahuman">Book a conversation of about 30–45 minutes</a>
+              <a class="btn btn-secondary" href="#involved">What this involves</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section id="what" class="reveal" aria-labelledby="what-h">
+        <h2 id="what-h">What this is</h2>
+        <p>I’m Abdul, and this is my own research. There is no company behind this page, and I’m not asking you to look at or buy a product. I want to understand how your work actually runs — caseload, documentation, coordination, tools and constraints — so I learn from practice rather than guessing.</p>
+        <p>If you are a practising APD in Australia, I would be grateful to hear how your day really works. Wave 1 is focused on Sydney and NSW. A conversation is useful on its own; shadowing is optional and only happens later if it can be arranged properly.</p>
+      </section>
+
+      <section id="who" class="reveal" aria-labelledby="who-h">
+        <h2 id="who-h">Who I’m looking for</h2>
+        <p>I’m hoping to speak with practising Accredited Practising Dietitians, starting in Sydney and elsewhere in NSW, including:</p>
+        <ul class="list">
+          <li>solo private-practice owners</li>
+          <li>group private-practice owners</li>
+          <li>dietitians in hospital or acute settings</li>
+          <li>dietitians working in aged care or NDIS</li>
+          <li>both new graduates (under 2 years practising as an APD) and experienced APDs (2+ years practising as an APD)</li>
+        </ul>
+        <p>New graduates are in scope. You do not need to agree to shadowing to have a conversation. If you practise elsewhere in Australia, I may be in touch in a later wave unless a first-wave conversation is clearly a good fit.</p>
+      </section>
+
+      <section id="involved" class="reveal" aria-labelledby="involved-h">
+        <h2 id="involved-h">What’s involved</h2>
+        <div class="cards">
+          <div class="card">
+            <h3>A conversation (the main invitation)</h3>
+            <p>About 30–45 minutes, by video, phone, or in person in Sydney, about how your work runs day to day. We can go into whatever is most real for you — caseload, documentation, coordination, funding such as Medicare CDM, NDIS, private health or aged care, and the way the day is organised. There is no script you have to sell to, and no product to review.</p>
+          </div>
+          <div class="card">
+            <h3>Shadowing (optional, later)</h3>
+            <p>If it can be arranged with the appropriate workplace or practice approvals, and with patient consent where anyone else’s care could be observed, I may later ask about an observational shadowing session of 2–4 hours. That is a separate step. Saying no to shadowing is completely fine, and it does not affect the conversation.</p>
+          </div>
+        </div>
+        <div class="note" style="margin-top:1rem">
+          <p><strong>Recording is optional and entirely up to you.</strong> I will only record and transcribe a session if you opt in. We can decide at the start, and saying no is completely fine. We can still have a useful conversation from notes alone.</p>
+        </div>
+      </section>
+
+      <section id="get" class="reveal" aria-labelledby="get-h">
+        <h2 id="get-h">What you get</h2>
+        <p>As a thank-you, I can share a short summary of what I learn across these conversations. There is no cash payment and no gift card. This is a one-time research conversation (and, only if you later agree and approvals are in place, a possible shadowing visit), not the start of a sales relationship.</p>
+      </section>
+
+      <section id="privacy" class="reveal" aria-labelledby="privacy-h">
+        <h2 id="privacy-h">Privacy and consent</h2>
+        <p>This research runs under my name, Abdul, in Sydney. I intend to handle personal information consistently with the Australian Privacy Principles under the Privacy Act 1988 (Cth).</p>
+        <ul class="list">
+          <li>I will record and transcribe a conversation only if you opt in. You can say no and we can work from notes.</li>
+          <li>I will not collect patient-identifiable information. I am interested in workflow and process — how work gets done — not the content of patient records or a patient’s story.</li>
+          <li>Shadowing proceeds only with permission from the practice or workplace, and with patient consent where a patient’s care could be observed.</li>
+          <li>Notes from our conversation are used for this research. In the research record they are kept against a participant ID rather than as a named file shared with others. I will not publish your name or practice-identifying details without your agreement.</li>
+          <li>If you would like to know what I hold, have it corrected, or have it deleted, email me and I will deal with that. I will also tell you, if you ask, how long I expect to keep the notes.</li>
+        </ul>
+        <p>If it helps your practice, I am happy to sign a confidentiality or research agreement before we meet — just ask.</p>
+        <p>Contact for questions, access, correction or deletion: <a href="mailto:abdulrahumanfazi@gmail.com">abdulrahumanfazi@gmail.com</a></p>
+      </section>
+
+      <section id="about" class="reveal" aria-labelledby="about-h">
+        <h2 id="about-h">About Abdul</h2>
+        <p>I’m Abdul, and I live in Sydney. For seven years I was a Principal Product Manager at Twin Health in the United States, covering an AI platform, sensors and mobile. Before that I worked at Zoho and SAP. This research is my own, and it is not affiliated with any employer.</p>
+        <p>You can see more of my work at <a href="https://abdulrahuman.com/">abdulrahuman.com</a>, or on <a href="https://linkedin.com/in/MAbdulRahuman">LinkedIn</a>.</p>
+      </section>
+
+      <section id="book" class="reveal cta" aria-labelledby="book-h">
+        <h2 id="book-h">If a conversation of about 30–45 minutes would suit you, I would be grateful.</h2>
+        <p>You can book a time below, or email me at <a href="mailto:abdulrahumanfazi@gmail.com">abdulrahumanfazi@gmail.com</a>. If now isn’t a good time, I completely understand.</p>
+        <a class="btn btn-primary" href="https://cal.com/abdul-rahuman">Book a conversation of about 30–45 minutes</a>
+      </section>
+
+      <section id="faq" class="reveal faq" aria-labelledby="faq-h">
+        <h2 id="faq-h">Questions</h2>
+        <details>
+          <summary>Do I have to agree to shadowing?</summary>
+          <p>No. A conversation of about 30–45 minutes is the main invitation. Shadowing is optional, later, and only if the workplace can approve it.</p>
+        </details>
+        <details>
+          <summary>Will this be recorded?</summary>
+          <p>Only if you opt in. Saying no is fine. We can have a useful conversation from notes alone.</p>
+        </details>
+        <details>
+          <summary>Is there a payment?</summary>
+          <p>No. The thank-you is a short summary of what I learn across the conversations.</p>
+        </details>
+        <details>
+          <summary>Are you selling a product?</summary>
+          <p>No. This is a learning conversation. There is no product to review and no company named on this page.</p>
+        </details>
+        <details>
+          <summary>I’m a new graduate. Does that count?</summary>
+          <p>Yes. New graduates (under 2 years practising as an APD) are in scope, as are experienced APDs.</p>
+        </details>
+        <details>
+          <summary>I work outside Sydney or NSW.</summary>
+          <p>You are welcome to get in touch. The first wave is Sydney and NSW; I may come back to people in other parts of Australia in a later wave.</p>
+        </details>
+        <details>
+          <summary>What about patients if you shadow?</summary>
+          <p>Shadowing only happens with practice or workplace permission, and with patient consent where a patient’s care could be observed. I will not collect patient-identifiable information.</p>
+        </details>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <ul>
+        <li>Abdul (Sydney)</li>
+        <li><a href="https://abdulrahuman.com/">abdulrahuman.com</a></li>
+        <li><a href="https://linkedin.com/in/MAbdulRahuman">LinkedIn</a></li>
+        <li><a href="#privacy">Privacy and consent</a></li>
+        <li><a href="mailto:abdulrahumanfazi@gmail.com">Email</a></li>
+      </ul>
+      <p>This page is for independent research under my own name. It is not a company site.</p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var root = document.documentElement;
+      root.classList.add('js');
+
+      // Menu toggle
+      var btn = document.querySelector('.menu-toggle');
+      var nav = document.getElementById('site-nav');
+      function closeMenu() { nav.classList.remove('open'); btn.setAttribute('aria-expanded', 'false'); }
+      btn.addEventListener('click', function () {
+        var open = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!open));
+        nav.classList.toggle('open', !open);
+      });
+      nav.addEventListener('click', function (e) { if (e.target.closest('a')) closeMenu(); });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && btn.getAttribute('aria-expanded') === 'true') { closeMenu(); btn.focus(); }
+      });
+
+      // Reveal on scroll (skipped when reduced motion is preferred)
+      var items = document.querySelectorAll('.reveal');
+      var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (reduce || !('IntersectionObserver' in window)) {
+        items.forEach(function (el) { el.classList.add('is-visible'); });
+        return;
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (en) {
+          if (en.isIntersecting) { en.target.classList.add('is-visible'); io.unobserve(en.target); }
+        });
+      }, { rootMargin: '0px 0px -10% 0px' });
+      items.forEach(function (el) { io.observe(el); });
+    })();
+  </script>
+</body>
+</html>
